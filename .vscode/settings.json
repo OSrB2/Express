@@ -1,0 +1,22 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#103515",
+    "titleBar.activeBackground": "#174A1D",
+    "titleBar.activeForeground": "#F7FDF8"
+  },
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "MySQL80",
+      "database": "loja",
+      "username": "root",
+      "password": ""
+    }
+  ]
+}
