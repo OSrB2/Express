@@ -4,15 +4,15 @@ const usuariosController = require('../controllers/usuariosController');
 const routes = express.Router();
 
 // Rotas Produtos
-routes.get('/produto/lista', produtoController.listarProdutos);
-routes.post('/produto/criar', produtoController.cadastrarProduto);
-routes.delete('/produto/:id/deletar', produtoController.deletarProduto);
-routes.put('/produto/:id/atualizar', produtoController.atualizarProduto);
+routes.get('/produtos', produtoController.listarProdutos);
+routes.post('/produtos', produtoController.cadastrarProduto);
+routes.delete('/produtos/:id', produtoController.deletarProduto);
+routes.put('/produtos/:id', produtoController.atualizarProduto);
 
 // Rotas usuários
-routes.get('/usuario/lista', usuariosController.listarUsuarios);
-routes.post('/usuario/cadastrar', usuariosController.criarUsuarios);
-routes.delete('/usuario/:id/deletar', usuariosController.deletarUsuarios);
-routes.put('/usuario/:id/atualizar', usuariosController.atualizarUsuarios)
+routes.get('/usuarios', usuariosController.listarUsuarios);
+routes.post('/usuarios', usuariosController.criarUsuarios);
+routes.delete('/usuarios/:id', usuariosController.deletarUsuarios);
+routes.put('/usuarios/:id', usuariosController.atualizarUsuarios);
 
 module.exports = routes;
