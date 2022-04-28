@@ -24,7 +24,7 @@ const produtoController = {
 
     await novoProduto.setCategorias(categoria);
 
-    res.status(201).res.json(novoProduto);
+    res.status(201).json(novoProduto);
   },
 
   async deletarProduto(req, res) {
